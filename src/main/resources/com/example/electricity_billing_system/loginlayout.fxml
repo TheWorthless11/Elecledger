@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electricity_billing_system.LoginController">
+   <style>-fx-background-color: ;</style>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="594.0" fitWidth="723.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icon/ecofriendly1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="162.0" layoutY="87.0" text="Username" textFill="#ecf405">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="127.0" text="Password" textFill="#ecf405">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="290.0" layoutY="130.0" promptText="Password" />
+            <Button fx:id="button" layoutX="97.0" layoutY="233.0" mnemonicParsing="false" onAction="#setwronglogin" prefHeight="30.0" prefWidth="150.0" text="Log In" />
+            <Button fx:id="cancelbutton" layoutX="294.0" layoutY="233.0" mnemonicParsing="false" onAction="#setCancelbutton" prefHeight="30.0" prefWidth="150.0" text="Cancel" />
+            <Label fx:id="wronglogin" layoutX="266.0" layoutY="49.0" prefHeight="18.0" prefWidth="126.0" textFill="#ecf405" />
+            <Button fx:id="si" layoutX="191.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="30.0" prefWidth="150.0" text="Sign Up" />
+            <ChoiceBox fx:id="mychoicebox" layoutX="289.0" layoutY="173.0" prefWidth="150.0" />
+            <Label layoutX="166.0" layoutY="170.0" text="Log In As" textFill="#ecf405">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="290.0" layoutY="90.0" promptText="Username" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="600" prefHeight="370" fx:controller="com.example.electricity_billing_system.NewCustomer">
+    <!-- VBox inside the AnchorPane -->
+    <VBox fx:id="vbox" spacing="10" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50">
+        <!-- Auto-generated Meter Number (non-editable) -->
+        <TextField fx:id="tfMeterNo" promptText="Meter Number" editable="false"/>
+
+        <!-- Other customer details fields -->
+        <TextField fx:id="tfname" promptText="Customer Name"/>
+        <TextField fx:id="tfaddress" promptText="Address"/>
+        <TextField fx:id="tfcity" promptText="City"/>
+        <TextField fx:id="tfstate" promptText="State"/>
+        <TextField fx:id="tfemail" promptText="Email"/>
+        <TextField fx:id="tfphone" promptText="Phone Number"/>
+
+        <Button fx:id="submitButton" text="Submit" onAction="#handleSubmitButton"/>
+        <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancelButton"/>
+    </VBox>
+</AnchorPane>

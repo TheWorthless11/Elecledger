@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="370" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.electricity_billing_system.Calculate">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="331.0" prefWidth="554.0" spacing="10" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <ComboBox fx:id="meterComboBox" prefWidth="200.0" promptText="Select Meter No" />
+            <TextField fx:id="nameField" editable="false" prefWidth="200.0" promptText="Name" />
+            <TextField fx:id="addressField" editable="false" prefWidth="200.0" promptText="Address" />
+            <ComboBox fx:id="monthComboBox" prefWidth="200.0" promptText="Select Month" />
+            <TextField fx:id="unitsField" prefWidth="200.0" promptText="Units Consumed" />
+            <TextField fx:id="totalBillField" editable="false" prefWidth="200.0" promptText="Total Bill" />
+            <Button onAction="#handleCalculateBill" prefHeight="18.0" prefWidth="257.0" text="Calculate" />
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="submitButton" onAction="#handleSubmit" prefHeight="31.0" prefWidth="154.0" text="Submit" />
+                <Button fx:id="cancelButton" onAction="#handleCancel" prefHeight="30.0" prefWidth="146.0" text="Cancel" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

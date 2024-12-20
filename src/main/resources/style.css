@@ -1,0 +1,7 @@
+.root-container {
+    -fx-background-image: url("windmilladmin.jpg");
+    -fx-background-size: cover;  /* Optional: this makes the background cover the whole container */
+    -fx-background-position: center center; /* Optional: to center the image */
+    -fx-background-repeat: no-repeat; /* Optional: to avoid repeating the image */
+}
+

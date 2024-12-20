@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electricity_billing_system.UpdateInfo" prefWidth="600" prefHeight="400">
+    <!-- Name Label and TextField -->
+    <Label text="Name:" layoutX="20" layoutY="30"/>
+    <TextField fx:id="nameField" layoutX="100" layoutY="25" prefWidth="200"/>
+
+    <!-- Address Label and TextField -->
+    <Label text="Address:" layoutX="20" layoutY="80"/>
+    <TextField fx:id="addressField" layoutX="100" layoutY="75" prefWidth="200"/>
+
+    <!-- City Label and TextField -->
+    <Label text="City:" layoutX="20" layoutY="130"/>
+    <TextField fx:id="cityField" layoutX="100" layoutY="125" prefWidth="200"/>
+
+    <!-- State Label and TextField -->
+    <Label text="State:" layoutX="20" layoutY="180"/>
+    <TextField fx:id="stateField" layoutX="100" layoutY="175" prefWidth="200"/>
+
+    <!-- Email Label and TextField -->
+    <Label text="Email:" layoutX="20" layoutY="230"/>
+    <TextField fx:id="emailField" layoutX="100" layoutY="225" prefWidth="200"/>
+
+    <!-- Phone Label and TextField -->
+    <Label text="Phone:" layoutX="20" layoutY="280"/>
+    <TextField fx:id="phoneField" layoutX="100" layoutY="275" prefWidth="200"/>
+
+    <!-- Update Button -->
+    <Button text="Update" layoutX="100" layoutY="320" fx:id="updateButton" />
+</AnchorPane>

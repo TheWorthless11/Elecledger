@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.electricity_billing_system.Detail">
+    <children>
+        <TableView fx:id="customerTable" prefHeight="400.0" prefWidth="600.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="colMeterNo" text="Meter No" prefWidth="80.0" />
+                <TableColumn fx:id="colName" text="Name" prefWidth="100.0" />
+                <TableColumn fx:id="colAddress" text="Address" prefWidth="120.0" />
+                <TableColumn fx:id="colCity" text="City" prefWidth="80.0" />
+                <TableColumn fx:id="colState" text="State" prefWidth="80.0" />
+                <TableColumn fx:id="colEmail" text="Email" prefWidth="120.0" />
+                <TableColumn fx:id="colPhone" text="Phone" prefWidth="100.0" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

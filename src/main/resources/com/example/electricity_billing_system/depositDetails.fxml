@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.electricity_billing_system.Deposit" spacing="10" alignment="CENTER">
+    <Label text="Deposit Details" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+    <HBox spacing="10">
+        <Label text="Meter Number:" />
+        <ComboBox fx:id="meterNumberDropdown" promptText="Select meter number" />
+        <Button text="Search" onAction="#handleSearchByMeter" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Month:" />
+        <ComboBox fx:id="monthDropdown" promptText="Select month" />
+        <Button text="Search" onMouseClicked="#handleSearchByMonth" />
+    </HBox>
+
+    <TableView fx:id="billTable" prefHeight="300" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="meterNoColumn" text="Meter No" />
+            <TableColumn fx:id="monthColumn" text="Month" />
+            <TableColumn fx:id="unitsColumn" text="Units" />
+            <TableColumn fx:id="totalBillColumn" text="Total Bill" />
+            <TableColumn fx:id="statusColumn" text="Status" />
+        </columns>
+    </TableView>
+</VBox>

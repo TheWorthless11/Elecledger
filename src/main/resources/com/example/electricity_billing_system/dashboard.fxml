@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-container" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electricity_billing_system.DashboardController">
+   <children>
+      <!-- Master Button as a MenuButton -->
+      <MenuButton fx:id="masterButton" layoutX="164.0" layoutY="167.0" prefWidth="118.0" text="Master">
+         <!-- Menu items for the 4 options -->
+         <items>
+            <MenuItem onAction="#handleNewCustomer" text="New Customer" />
+            <MenuItem onAction="#handleCustomerDetails" text="Customer Details" />
+            <MenuItem onAction="#handleDepositDetails" text="Deposit Details" />
+            <MenuItem onAction="#handleCalculateBill" text="Calculate Bill" />
+         </items>
+      </MenuButton>
+
+      <!-- Logout Button -->
+      <Button fx:id="logoutButton" layoutX="332.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleLogoutButton" text="Log Out" />
+   </children>
+</AnchorPane>
